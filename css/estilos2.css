@@ -1,0 +1,279 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+/*grid pagina*/
+.conteiner {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 6fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "barra barra barra"
+    "marveldc videoindex ivreaovni"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+.barradenavegacion {
+  grid-area: barra;
+}
+.marvelydc {
+  grid-area: marveldc;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoindex {
+  grid-area: videoindex;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ivreayobvni {
+  grid-area: ivreaovni;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  grid-area: footer;
+  width: 100%;
+  height: 52px;
+  background-color: rgb(254, 237, 0, 255);
+}
+
+/*Logo tipo*/
+header section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.logo img {
+  width: 400px;
+  
+}
+/*Barra de navegacion*/
+
+.barradenavegacion a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  align-items: center;
+  padding: 25px;
+}
+ul a:hover {
+  color: rgb(254, 237, 0, 255);
+}
+
+.barradenavegacion {
+  margin-bottom: 0%;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*proveedores*/
+.logomarvel img {
+  width: 80%;
+  height: 80%;
+  border-radius: 10%;
+}
+.logodc img {
+  width: 80%;
+  height: 80%;
+  border-radius: 10%;
+}
+
+.videoindex video {
+  display: flex;
+  justify-content: center;
+}
+
+
+.logoivrea img {
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  border-radius: 10%;
+}
+
+.logoivrea {
+  padding-bottom: 20%;
+}
+.logoovni img {
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  border-radius: 10%;
+}
+
+/* footer*/
+footer {
+  display: flex;
+  align-items: center;
+}
+
+.facebook {
+  padding-left: 40px;
+  width: 70px;
+  height: 30px;
+}
+.insta {
+  padding-left: 40px;
+  width: 70px;
+  height: 30px;
+}
+.twitter {
+  padding-left: 40px;
+  width: 70px;
+  height: 30px;
+}
+
+.formulario{
+ 
+  width: 40%;
+  height: 465px;
+  padding-top: 8%;
+}
+/* pagina Comic*/
+/*video de marvel*/
+.videocomic {
+  background-color: rgb(108, 2, 2);
+  margin: 0%;
+}
+
+.videomarvel {
+  width: 30%;
+  position: relative;
+  left: 35%;
+  margin: 1%;
+}
+
+/*titulo de comic*/
+
+.titulocomics {
+  background-color: rgb(254, 237, 0, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  font-weight: 600;
+  font-size: 40px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.categoriacomis {
+  margin-left: 3%;
+}
+.categoria {
+  margin-left: 3%;
+  padding: 1%;
+}
+
+/* pagina manga*/
+/*video de caballeros*/
+.videomanga {
+  background-color: rgb(35, 35, 241);
+  margin: 0%;
+}
+
+.videocaballeros {
+  width: 30%;
+  position: relative;
+  left: 35%;
+  margin: 1%;
+}
+
+/*titulo de manga*/
+
+.titulomanga {
+  background-color: rgb(254, 237, 0, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  font-weight: 600;
+  font-size: 40px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*titulo de novedades*/
+
+.titulonovedades {
+  background-color: rgb(254, 237, 0, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  font-weight: 600;
+  font-size: 40px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/*pagina de contacto*/
+
+.titulocontacto {
+  background-color: rgb(254, 237, 0, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.contacto {
+  display: flex;
+  width: 100%;
+  left: 100%;
+  justify-content: center;
+  
+  background-color: black;
+}
+.ubicacion{
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  padding-top: 60px;
+}
+ .formulario{
+  padding-top: 50px;
+ }
+ 
+
+/*media queries*/
+
+ @media (max-width: 700px) {
+  .ubicacion{
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .videodc {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .barradenavegacion {
+    flex-direction: column;
+  }
+}
