@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-final-2814",
+  "version": "1.0.0",
+  "description": "ESTE ES UN PROYECTO QUE SE REALIZO PARA LA VENTA ONLINE DE UNA COMIQUERIA , EN EL MISMO SE USO HTML5 , SCSS ,CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Sebastian Lopez",
+  "license": "ISC"
+}
